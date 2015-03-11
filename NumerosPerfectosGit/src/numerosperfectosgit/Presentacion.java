@@ -41,6 +41,8 @@ public class Presentacion extends javax.swing.JFrame {
         jPanel1.setToolTipText("");
         jPanel1.setName("pnlPrincipal"); // NOI18N
 
+        jTextField1.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
+
         jButton1.setText("¿Es perfecto?");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
