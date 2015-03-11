@@ -42,6 +42,11 @@ public class Presentacion extends javax.swing.JFrame {
         jPanel1.setName("pnlPrincipal"); // NOI18N
 
         jTextField1.setHorizontalAlignment(javax.swing.JTextField.TRAILING);
+        jTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jTextField1KeyTyped(evt);
+            }
+        });
 
         jButton1.setText("¿Es perfecto?");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -108,6 +113,10 @@ public class Presentacion extends javax.swing.JFrame {
                 jTextField1.setText("Escribe aquí");
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jTextField1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jTextField1KeyTyped
+        jLabel1.setText("");
+    }//GEN-LAST:event_jTextField1KeyTyped
 
     /**
      * @param args the command line arguments
